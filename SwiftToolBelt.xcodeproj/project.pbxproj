@@ -1,0 +1,220 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_SwiftToolBelt, ______Target_SwiftToolBeltTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_SwiftToolBelt = {
+            isa = PBXGroup;
+            name = 'SwiftToolBelt';
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/SwiftToolBelt.swift');
+        };
+        '__PBXFileRef_Sources/SwiftToolBelt.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'SwiftToolBelt.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SwiftToolBelt = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwiftToolBelt;
+            buildPhases = (CompilePhase_SwiftToolBelt, ___LinkPhase_SwiftToolBelt);
+            buildRules = ();
+            dependencies = ();
+            name = 'SwiftToolBelt';
+            productName = SwiftToolBelt;
+            productReference = _____Product_SwiftToolBelt;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_SwiftToolBelt = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'SwiftToolBelt.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwiftToolBelt = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/SwiftToolBelt.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/SwiftToolBelt.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/SwiftToolBelt.swift';
+        };
+        ___LinkPhase_SwiftToolBelt = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_SwiftToolBelt = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwiftToolBelt, _ReleaseConf_SwiftToolBelt);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwiftToolBelt = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'SwiftToolBelt.xcodeproj/SwiftToolBelt_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'SwiftToolBelt'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_SwiftToolBelt = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'SwiftToolBelt.xcodeproj/SwiftToolBelt_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'SwiftToolBelt'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_SwiftToolBelt = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwiftToolBelt;
+        };
+        _______Group_SwiftToolBeltTests = {
+            isa = PBXGroup;
+            name = 'SwiftToolBeltTests';
+            path = 'Tests/SwiftToolBeltTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/SwiftToolBeltTests/SwiftToolBeltTests.swift');
+        };
+        '__PBXFileRef_Tests/SwiftToolBeltTests/SwiftToolBeltTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'SwiftToolBeltTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SwiftToolBeltTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwiftToolBeltTests;
+            buildPhases = (CompilePhase_SwiftToolBeltTests, ___LinkPhase_SwiftToolBeltTests);
+            buildRules = ();
+            dependencies = (__Dependency_SwiftToolBelt);
+            name = 'SwiftToolBeltTests';
+            productName = SwiftToolBeltTests;
+            productReference = _____Product_SwiftToolBeltTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_SwiftToolBeltTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'SwiftToolBeltTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwiftToolBeltTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/SwiftToolBeltTests/SwiftToolBeltTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/SwiftToolBeltTests/SwiftToolBeltTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/SwiftToolBeltTests/SwiftToolBeltTests.swift';
+        };
+        ___LinkPhase_SwiftToolBeltTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_SwiftToolBelt_via_SwiftToolBeltTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_SwiftToolBelt_via_SwiftToolBeltTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SwiftToolBelt;
+        };
+        _______Confs_SwiftToolBeltTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwiftToolBeltTests, _ReleaseConf_SwiftToolBeltTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwiftToolBeltTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'SwiftToolBelt.xcodeproj/SwiftToolBeltTests_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_SwiftToolBeltTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'SwiftToolBelt.xcodeproj/SwiftToolBeltTests_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_SwiftToolBeltTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwiftToolBeltTests;
+        };
+        '__PBXFileRef_SwiftToolBelt.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'SwiftToolBelt.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_SwiftToolBelt.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_SwiftToolBelt);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_SwiftToolBeltTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_SwiftToolBeltTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_SwiftToolBelt);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_SwiftToolBelt.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_SwiftToolBelt.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
