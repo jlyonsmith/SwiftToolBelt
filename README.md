@@ -1,4 +1,4 @@
-![Swift Package Manager Compatible]()
+[![Swift Package Manager](https://rawgit.com/jlyonsmith/artwork/master/SwiftPackageManager/spm-compatible.svg)](https://swift.org/package-manager/)
 
 ## Swift Tool Belt
 
